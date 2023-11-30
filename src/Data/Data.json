@@ -1,0 +1,327 @@
+{
+    "meyveler": [
+        {
+            "id":1,
+            "ad": "Elma",
+            "açıklama": "Tatlı ve sulu bir meyve.",
+            "fiyat": 5.99
+        },
+        {
+            "id":2,
+            "ad": "Muz",
+            "açıklama": "Potasyum açısından zengin, enerji verici bir meyve.",
+            "fiyat": 7.49
+        },
+        {
+            "id":3,
+            "ad": "Portakal",
+            "açıklama": "C vitamini deposu, taze ve ekşi bir meyve.",
+            "fiyat": 6.99
+        },
+        {
+            "id":4,
+            "ad": "Üzüm",
+            "açıklama": "Şeker içerir, genellikle salkım halinde bulunur.",
+            "fiyat": 9.99
+        },
+        {
+            "id":5,
+            "ad": "Çilek",
+            "açıklama": "Lezzetli ve vitamin açısından zengin bir meyve.",
+            "fiyat": 8.49
+        },
+        {
+            "id":6,
+            "ad": "Ananas",
+            "açıklama": "Tropikal bir meyve, tatlı ve sulu.",
+            "fiyat": 10.99
+        },
+        {
+            "id":7,
+            "ad": "Kiraz",
+            "açıklama": "Yaz aylarının lezzetli meyvesi.",
+            "fiyat": 12.99
+        },
+        {
+            "id":8,
+            "ad": "Mango",
+            "açıklama": "Tropikal bir meyve, tatlı ve aromatik.",
+            "fiyat": 11.49
+        },
+        {
+            "id":9,
+            "ad": "Karpuz",
+            "açıklama": "Serinletici ve su içeriği yüksek bir meyve.",
+            "fiyat": 6.79
+        },
+        {
+            "id":10,
+            "ad": "Şeftali",
+            "açıklama": "Yaz aylarının sulu ve tatlı meyvesi.",
+            "fiyat": 9.29
+        },
+        {
+            "id":11,
+            "ad": "Armut",
+            "açıklama": "Genellikle yumuşak ve hafif tatlıdır.",
+            "fiyat": 7.99
+        },
+        {
+            "id":12,
+            "ad": "Vişne",
+            "açıklama": "Ekşi ve tatlı bir karışım.",
+            "fiyat": 14.99
+        },
+        {
+            "id":13,
+            "ad": "Limon",
+            "açıklama": "Ekşi ve taze bir tat.",
+            "fiyat": 4.99
+        },
+        {
+            "id":14,
+            "ad": "Dut",
+            "açıklama": "İnce kabuklu, tatlı ve besleyici bir meyve.",
+            "fiyat": 8.79
+        },
+        {
+            "id":15,
+            "ad": "Avokado",
+            "açıklama": "Sağlıklı yağlar içeren kremamsı bir meyve.",
+            "fiyat": 13.49
+        },
+        {
+            "id":16,
+            "ad": "Nar",
+            "açıklama": "Antioksidanlar açısından zengin, ekşi ve tatlı.",
+            "fiyat": 15.99
+        },
+        {
+            "id":17,
+            "ad": "Erik",
+            "açıklama": "Yaz aylarının ferahlatıcı meyvesi.",
+            "fiyat": 10.49
+        },
+        {
+            "id":18,
+            "ad": "Ahududu",
+            "açıklama": "Antioksidanlar içerir, tatlı ve ekşi.",
+            "fiyat": 9.89
+        },
+        {
+            "id":19,
+            "ad": "Papaya",
+            "açıklama": "A vitamini açısından zengin, tropikal bir meyve.",
+            "fiyat": 12.29
+        },
+        {
+            "id":20,
+            "ad": "Çarkıfelek",
+            "açıklama": "Enerji verici ve vitamin içerir.",
+            "fiyat": 5.49
+        },
+        {
+            "id":21,
+            "ad": "Kivi",
+            "açıklama": "C vitamini kaynağı, taze ve ekşi bir meyve.",
+            "fiyat": 6.59
+        },
+        {
+            "id":22,
+            "ad": "Passiflora",
+            "açıklama": "Lezzetli ve egzotik bir meyve.",
+            "fiyat": 11.99
+        },
+        {
+            "id":23,
+            "ad": "Guava",
+            "açıklama": "C vitamini içerir, tatlı ve ekşi bir meyve.",
+            "fiyat": 8.69
+        },
+        {
+            "id":24,
+            "ad": "Ceviz",
+            "açıklama": "Sağlıklı yağlar içerir, sert dış kabuklu.",
+            "fiyat": 16.49
+        },
+        {
+            "id":25,
+            "ad": "Efe",
+            "açıklama": "Enerji verici ve besleyici bir meyve.",
+            "fiyat": 7.09
+        },
+        {
+            "id":26,
+            "ad": "Kuşburnu",
+            "açıklama": "C vitamini kaynağı, ekşi ve tatlı.",
+            "fiyat": 9.79
+        },
+        {
+            "id":27,
+            "ad": "Feijoa",
+            "açıklama": "Antioksidanlar içerir, hoş bir aroma.",
+            "fiyat": 10.89
+        },
+        {
+            "id":28,
+            "ad": "Şef",
+            "açıklama": "Enerji verici ve sulu bir meyve.",
+            "fiyat": 8.19
+        },
+        {
+            "id":29,
+            "ad": "İncir",
+            "açıklama": "Lif açısından zengin, yumuşak ve tatlı.",
+            "fiyat": 7.29
+        },
+        {
+            "id":30,
+            "ad": "Kaktüs",
+            "açıklama": "Susuzluğu giderici, sert dikenli bir meyve.",
+            "fiyat": 4.39
+        }
+    
+    ],
+    "sebzeler": [
+        {
+            "id":31,
+            "ad": "Domates",
+            "açıklama": "Meyve olarak sınıflandırılsa da genellikle sebze olarak tüketilir."
+        },
+        {
+            "id":32,
+            "ad": "Salatalık",
+            "açıklama": "Yüksek su içeriği olan ferahlatıcı bir sebze."
+        },
+        {
+            "id":33,
+            "ad": "Havuç",
+            "açıklama": "A vitamini açısından zengin, tatlı ve besleyici bir sebze."
+        },
+        {
+            "id":34,
+            "ad": "Brokoli",
+            "açıklama": "Koyu yeşil başları ve ince sapları olan sağlıklı bir sebze."
+        },
+        {
+            "id":35,
+            "ad": "Patates",
+            "açıklama": "Nişasta içeren bir kök sebze, çeşitli yemeklerde kullanılır."
+        },
+        {
+            "id":36,
+            "ad": "Biber",
+            "açıklama": "Çeşitli renklerde bulunabilir, tatlı veya acı olabilir."
+        },
+        {
+            "id":37,
+            "ad": "Kabak",
+            "açıklama": "Kışın sıkça tüketilen lif açısından zengin bir sebze."
+        },
+        {
+            "id":38,
+            "ad": "Ispanak",
+            "açıklama": "Demir ve vitamin içeren sağlıklı bir yaprak sebzesi."
+        },
+        {
+            "id":39,
+            "ad": "Karnabahar",
+            "açıklama": "Başak şeklinde beyaz çiçek başlarına sahip bir sebze."
+        },
+        {
+            "id":40,
+            "ad": "Soğan",
+            "açıklama": "Çeşitli yemeklerde tatlandırıcı olarak kullanılan bir aromatik."
+        },
+        {
+            "id":41,
+            "ad": "Pırasa",
+            "açıklama": "Soğan benzeri bir sebze, genellikle sarmalarda kullanılır."
+        },
+        {
+            "id":42,
+            "ad": "Kuşkonmaz",
+            "açıklama": "İnce ve uzun sapları olan lezzetli bir sebze."
+        },
+        {
+            "id":43,
+            "ad": "Kereviz",
+            "açıklama": "Sapları ve yaprakları kullanılır, hafif acı bir lezzeti vardır."
+        },
+        {
+            "id":44,
+            "ad": "Enginar",
+            "açıklama": "İnce yaprakları olan ve genellikle çiğ veya haşlanmış olarak tüketilen bir sebze."
+        },
+        {
+            "id":45,
+            "ad": "Bamya",
+            "açıklama": "Kılçıklı bir sebze, özellikle güney bölgelerinde yaygın olarak tüketilir."
+        },
+        {
+            "id":46,
+            "ad": "Fasulye",
+            "açıklama": "Çeşitli türleri bulunan bir baklagil sebzesi."
+        },
+        {
+            "id":47,
+            "ad": "Bezelye",
+            "açıklama": "Küçük yeşil bezelyeler içeren bir baklagil sebzesi."
+        },
+        {
+            "id":48,
+            "ad": "Domates",
+            "açıklama": "Geleneksel kırmızı domatesin sarı renkte bir çeşidi."
+        },
+        {
+            "id":49,
+            "ad": "Lahana",
+            "açıklama": "Sarı ve mor renkli türleri de bulunur, genellikle lahana sarmasında kullanılır."
+        },
+        {
+            "id":50,
+            "ad": "Roka",
+            "açıklama": "Biberi bir acılığa sahip, bol vitamin içeren bir yeşillik."
+        },
+        {
+            "id":51,
+            "ad": "Kırmızı Lahana",
+            "açıklama": "Çeşitli yemeklerde kullanılan kırmızı renkteki lahana türü."
+        },
+        {
+            "id":52,
+            "ad": "Kuşkonmaz",
+            "açıklama": "Bazı türleri beyaz renkte olan bir sebze."
+        },
+        {
+            "id":53,
+            "ad": "Kabak",
+            "açıklama": "Turuncu renkli türleri de bulunan bir sebze."
+        },
+        {
+            "id":54,
+            "ad": "Turp",
+            "açıklama": "Lezzetli ve baharatlı bir sebze."
+        },
+        {
+            "id":55,
+            "ad": "Pırasa",
+            "açıklama": "Beyaz sapları olan bir sebze."
+        },
+        {
+            "id":56,
+            "ad": "Biber",
+            "açıklama": "Acı olabilen yeşil renkteki biber türleri."
+        },
+        {
+            "id":57,
+            "ad": "Karnabahar",
+            "açıklama": "Mor renkte başları olan bir sebze."
+        },
+        {
+            "id":58,
+            "ad": "Marul",
+            "açıklama": "Çeşitli türleri bulunan ve salatalarda sıkça kullanılan bir yeşillik."
+        }
+    ]
+}
