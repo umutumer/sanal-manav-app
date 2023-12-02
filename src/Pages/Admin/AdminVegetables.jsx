@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
 import AdminNavbar from "../../Components/AdminNavbar";
 import { useDispatch, useSelector } from "react-redux";
-import {  fetchVegetables } from "../../Redux/Action";
+import {  fetchData } from "../../Redux/Action";
 
 const AdminVegetables = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.data);
+  const filteredData = data.filter((vegetables) => vegetables.tur === "Sebze")
 
   useEffect(() => {
-    dispatch(fetchVegetables());
+    dispatch(fetchData());
   }, [dispatch]);
   return (
     <div className="flex">
@@ -26,7 +27,7 @@ const AdminVegetables = () => {
             </tr>
           </thead>
           <tbody>
-            {data.map((sebze, index) => (
+            {filteredData.map((sebze, index) => (
               <tr className="border-b-2" key={index}>
                 <td>{sebze.ad}</td>
                 <td>{sebze.açıklama}</td>

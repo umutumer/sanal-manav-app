@@ -14,7 +14,7 @@ const AdminNavbar = () => {
         <Link to='/admin/fruits' className=" text-white p-2 text-xl text-center bg-gray-300 hover:bg-gray-400 duration-300 rounded-lg mb-2">
           Meyveler
         </Link>
-        <Link className=" text-white p-2 text-xl text-center bg-gray-300 hover:bg-gray-400 duration-300 rounded-lg mb-2">
+        <Link to='/admin/vegetables' className=" text-white p-2 text-xl text-center bg-gray-300 hover:bg-gray-400 duration-300 rounded-lg mb-2">
           Sebzeler
         </Link>
         <Link className=" text-white p-2 text-xl text-center bg-gray-300 hover:bg-gray-400 duration-300 rounded-lg mb-2">
