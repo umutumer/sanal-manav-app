@@ -3,7 +3,7 @@ import NavbarLogo from '../assets/sanal-manav-logo.png'
 import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
-    <nav className='flex justify-between items-center p-2 bg-green-700 fixed w-full h-28 text-xl text-white top-0'>
+    <nav className='flex justify-between items-center p-2 bg-green-700 fixed w-full h-28 text-xl text-white top-0 z-50'>
         <div className='w-24'>
             <img src={NavbarLogo} alt="NavbarLogo" className='w-full' />
         </div>

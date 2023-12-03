@@ -50,15 +50,37 @@ const Home = () => {
             Mutlu Müşteriler
           </h3>
         </div>
-        <div className="w-full flex items-center">
+      </div>
+      <div className="w-full flex flex-col items-center mt-20">
+        <h3 className="text-4xl font-bold mb-10 text-green-600">
+          Haftanın Yıldızları ⭐
+        </h3>
+        <div className=" flex flex-wrap justify-center w-full">
           {filteredData.map((yildiz, index) => (
-            <div className="w-56" key={index}>
-              <img src="" alt="resim" />
-              <p>{yildiz.ad}</p>
-              <p>{yildiz.fiyat}₺</p>
-              <button>Sepete Ekle</button>
+            <div
+              className="w-56 h-[330px] border rounded-xl border-green-600 m-2 text-center"
+              key={index}
+            >
+              <img
+                src={yildiz.resim}
+                alt="resim"
+                className="w-56 h-52 object-cover p-2"
+              />
+              <h4 className="text-xl font-semibold text-green-600 mb-2">
+                {yildiz.ad}
+              </h4>
+              <p className="mb-4">
+                <span className="text-green-600">Fiyat: </span>
+                {yildiz.fiyat}₺
+              </p>
+              <button className="bg-green-600 text-white p-2 rounded-xl w-[90%]">
+                Sepete Ekle
+              </button>
             </div>
           ))}
+        </div>
+        <div className="w-full flex flex-col items-center mt-20 bg-gray-100">
+            <h3 className="text-4xl font-bold mt-20 mb-10 text-green-600">Müşteri Yorumları</h3>
         </div>
       </div>
     </div>

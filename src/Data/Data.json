@@ -4,6 +4,7 @@
             "id": 1,
             "ad": "Elma",
             "açıklama": "Tatlı ve sulu bir meyve.",
+            "resim":"https://www.shutterstock.com/image-photo/red-apple-isolated-clipping-path-600nw-1839358651.jpg",
             "fiyat": 5.99,
             "tur": "Meyve",
             "haftaninYildizi":true
@@ -12,6 +13,7 @@
             "id": 2,
             "ad": "Muz",
             "açıklama": "Potasyum açısından zengin, enerji verici bir meyve.",
+            "resim":"https://png.pngtree.com/png-clipart/20220716/ourmid/pngtree-banana-yellow-fruit-banana-skewers-png-image_5944324.png",
             "fiyat": 7.49,
             "tur": "Meyve",
             "haftaninYildizi":true
@@ -20,6 +22,7 @@
             "id": 3,
             "ad": "Portakal",
             "açıklama": "C vitamini deposu, taze ve ekşi bir meyve.",
+            "resim":"https://watermark.lovepik.com/photo/20211118/large/lovepik-fresh-juicy-orange-png-picture_480004785.jpg",
             "fiyat": 6.99,
             "tur": "Meyve",
             "haftaninYildizi":true
@@ -35,6 +38,7 @@
             "id": 5,
             "ad": "Çilek",
             "açıklama": "Lezzetli ve vitamin açısından zengin bir meyve.",
+            "resim":"https://png.pngtree.com/png-clipart/20230425/original/pngtree-fruit-strawberry-red-fresh-png-image_9096589.png",
             "fiyat": 8.49,
             "tur": "Meyve",
             "haftaninYildizi":true
@@ -71,6 +75,7 @@
             "id": 10,
             "ad": "Şeftali",
             "açıklama": "Yaz aylarının sulu ve tatlı meyvesi.",
+            "resim":"https://static.vecteezy.com/system/resources/previews/022/825/549/original/peach-fruit-peach-on-transparent-background-png.png",
             "fiyat": 9.29,
             "tur": "Meyve",
             "haftaninYildizi":true
