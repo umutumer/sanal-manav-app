@@ -12,14 +12,14 @@ const AdminVegetables = () => {
     dispatch(fetchData());
   }, [dispatch]);
   return (
-    <div className="flex">
+    <div className="flex min-h-screen bg-slate-800">
       <div className="w-56 mr-10">
         <AdminNavbar />
       </div>
       <div className="w-full">
-        <table className="w-full">
-          <thead className="border-b-2 mb-2"> 
-            <tr>
+        <table className="w-full text-white">
+          <thead className="mb-2"> 
+            <tr className="bg-slate-900 text-blue-600">
               <th>Sebze Adı</th>
               <th>Sebze Açıklaması</th>
               <th>Sebze Fiyatı</th>
@@ -28,7 +28,7 @@ const AdminVegetables = () => {
           </thead>
           <tbody>
             {filteredData.map((sebze, index) => (
-              <tr className="border-b-2" key={index}>
+              <tr className="bg-slate-800 even:bg-slate-900 p-2" key={index}>
                 <td>{sebze.ad}</td>
                 <td>{sebze.açıklama}</td>
                 <td>{sebze.fiyat}₺</td>

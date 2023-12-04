@@ -12,25 +12,25 @@ const AdminFruits = () => {
     dispatch(fetchData());
   }, [dispatch]);
   return (
-    <div className="flex">
-      <div className="w-56 mr-10">
+    <div className="flex bg-slate-800 min-h-screen">
+      <div className="w-56 mr-8">
         <AdminNavbar />
       </div>
       <div className="w-full">
-        <table className="w-full">
-          <thead className="border-b-2 mb-2"> 
-            <tr>
+        <table className="w-full text-white">
+          <thead className="mb-2"> 
+            <tr className="bg-slate-900 text-blue-600">
               <th>Meyve Adı</th>
-              <th>Meyve Açıklaması</th>
+              <th>Meyve Resmi</th>
               <th>Meyve Fiyatı</th>
               <th>İşlemler</th>
             </tr>
           </thead>
           <tbody>
             {filteredData.map((meyve, index) => (
-              <tr className="border-b-2" key={index}>
+              <tr className=" bg-slate-800 even:bg-slate-900 p-2" key={index}>
                 <td>{meyve.ad}</td>
-                <td>{meyve.açıklama}</td>
+                <td><img src={meyve.resim} alt="" className="w-10" /></td>
                 <td>{meyve.fiyat}₺</td>
                 <td>
                   <button>sil</button>

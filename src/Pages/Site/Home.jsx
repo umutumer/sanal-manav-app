@@ -7,6 +7,7 @@ import { RiSecurePaymentFill } from "react-icons/ri";
 import { BiHappy } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../Redux/Action";
+import Footer from "../../Components/Footer";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -55,7 +56,7 @@ const Home = () => {
         <h3 className="text-4xl font-bold mb-10 text-green-600">
           Haftanın Yıldızları ⭐
         </h3>
-        <div className=" flex flex-wrap justify-center w-full">
+        <div className=" flex flex-wrap justify-center w-full mb-20 ">
           {filteredData.map((yildiz, index) => (
             <div
               className="w-56 h-[330px] border rounded-xl border-green-600 m-2 text-center"
@@ -79,10 +80,8 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className="w-full flex flex-col items-center mt-20 bg-gray-100">
-            <h3 className="text-4xl font-bold mt-20 mb-10 text-green-600">Müşteri Yorumları</h3>
-        </div>
       </div>
+      <Footer />
     </div>
   );
 };
