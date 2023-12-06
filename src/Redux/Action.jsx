@@ -9,4 +9,3 @@ export const fetchData = () => async (dispatch) => {
     console.error('Veriler getirilirken hata oluştu:', error);
   }
 };
-
