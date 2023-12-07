@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AdminNavbar from "../../Components/AdminNavbar";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchData } from "../../Redux/Action";
+import { fetchData, updateData } from "../../Redux/Action";
 
 const AdminFruits = () => {
   const dispatch = useDispatch();
@@ -18,13 +18,34 @@ const AdminFruits = () => {
     setEditingIndex(index);
     setEditedData(filteredData[index]);
   };
+
   const handleCancelEdit = () => {
     setEditingIndex(null);
+    setEditedData({
+      ad: "",
+      resim: "",
+      fiyat: "",
+    });
+  };
+
+  const handleUpdateData = async () => {
+    try {
+      if (editingIndex !== null && editingIndex !== undefined) {
+        dispatch(updateData({ dataId: filteredData[editingIndex].id, newData: editedData }));
+      } else {
+        console.error("Hata: Geçerli bir meyve seçilmemiş.");
+      }
+    } catch (error) {
+      console.error('Veri güncellenirken hata oluştu:', error);
+    } finally {
+      handleCancelEdit();
+    }
   };
 
   useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
+
   return (
     <div className="flex bg-slate-800 min-h-screen">
       <div className="w-56 mr-8">
@@ -32,38 +53,46 @@ const AdminFruits = () => {
         {editingIndex !== null && (
           <div className="absolute top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center">
             <div className="bg-gray-700 w-64 h-72 flex flex-col items-center justify-center rounded shadow-lg shadow-black text-white">
-                <h3>Meyve Adı:</h3>
-                <input
-                  type="text"
-                  value={editedData.ad}
-                  onChange={(e) =>
-                    setEditedData({ ...editedData, ad: e.target.value })
-                  }
-                  className="bg-gray-600 p-2 rounded-md w-[90%]"
-                />
-                <h3>Meyve Resmi:</h3>
-                <input
-                  type="text"
-                  value={editedData.resim}
-                  onChange={(e) =>
-                    setEditedData({ ...editedData, resim: e.target.value })
-                  }
-                  className="bg-gray-600 p-2 rounded-md w-[90%]"
-                />
-                <h3>Meyve Fiyatı:</h3>
-                <input
-                  type="text"
-                  value={editedData.fiyat}
-                  onChange={(e) =>
-                    setEditedData({ ...editedData, fiyat: e.target.value })
-                  }
-                  className="bg-gray-600 p-2 rounded-md w-[90%]"
-                />
+              <h3>Meyve Adı:</h3>
+              <input
+                type="text"
+                value={editedData.ad}
+                onChange={(e) =>
+                  setEditedData({ ...editedData, ad: e.target.value })
+                }
+                className="bg-gray-600 p-2 rounded-md w-[90%]"
+              />
+              <h3>Meyve Resmi:</h3>
+              <input
+                type="text"
+                value={editedData.resim}
+                onChange={(e) =>
+                  setEditedData({ ...editedData, resim: e.target.value })
+                }
+                className="bg-gray-600 p-2 rounded-md w-[90%]"
+              />
+              <h3>Meyve Fiyatı:</h3>
+              <input
+                type="text"
+                value={editedData.fiyat}
+                onChange={(e) =>
+                  setEditedData({ ...editedData, fiyat: e.target.value })
+                }
+                className="bg-gray-600 p-2 rounded-md w-[90%]"
+              />
               <div className="mt-4">
-                <button className="mr-2 bg-green-500  p-2 rounded">
+                <button
+                  onClick={() => handleUpdateData()}
+                  className="mr-2 bg-green-500  p-2 rounded"
+                >
                   Kaydet
                 </button>
-                <button onClick={()=>handleCancelEdit()} className="bg-red-500  p-2 rounded">İptal</button>
+                <button
+                  onClick={() => handleCancelEdit()}
+                  className="bg-red-500  p-2 rounded"
+                >
+                  İptal
+                </button>
               </div>
             </div>
           </div>
@@ -97,7 +126,9 @@ const AdminFruits = () => {
                   >
                     Düzenle
                   </button>
-                  <button className="bg-red-500 w-20 text-white p-2 m-1 rounded">
+                  <button
+                    className="bg-red-500 w-20 text-white p-2 m-1 rounded"
+                  >
                     Sil
                   </button>
                 </td>

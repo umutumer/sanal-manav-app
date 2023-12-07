@@ -5,7 +5,7 @@
       "ad": "Elma",
       "açıklama": "Tatlı ve sulu bir meyve.",
       "resim": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25d45014-8cc3-4c98-b02c-5a0cf3a55ddd/dcrjbvx-b5078bbf-03ff-4625-b214-35c3f9fefc4c.png/v1/fill/w_894,h_894/red_apple_on_a_transparent_background__by_prussiaart_dcrjbvx-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvMjVkNDUwMTQtOGNjMy00Yzk4LWIwMmMtNWEwY2YzYTU1ZGRkXC9kY3JqYnZ4LWI1MDc4YmJmLTAzZmYtNDYyNS1iMjE0LTM1YzNmOWZlZmM0Yy5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Y0-7z3OBNt3CbKeZrPiWJFD-4LhVF7I9iC2wADeZEAU",
-      "fiyat": 5.99,
+      "fiyat": "7",
       "tur": "Meyve",
       "haftaninYildizi": true
     },
@@ -14,7 +14,7 @@
       "ad": "Muz",
       "açıklama": "Potasyum açısından zengin, enerji verici bir meyve.",
       "resim": "https://png.pngtree.com/png-clipart/20220716/ourmid/pngtree-banana-yellow-fruit-banana-skewers-png-image_5944324.png",
-      "fiyat": 7.49,
+      "fiyat": "20",
       "tur": "Meyve",
       "haftaninYildizi": true
     },
@@ -23,16 +23,16 @@
       "ad": "Portakal",
       "açıklama": "C vitamini deposu, taze ve ekşi bir meyve.",
       "resim": "https://watermark.lovepik.com/photo/20211118/large/lovepik-fresh-juicy-orange-png-picture_480004785.jpg",
-      "fiyat": 6.99,
+      "fiyat": "15",
       "tur": "Meyve",
       "haftaninYildizi": true
     },
     {
       "id": 4,
-      "ad": "Üzüm",
+      "ad": "Üzümm",
       "resim": "https://i.pinimg.com/originals/8d/7d/83/8d7d83ab540c940c096ad04c32f417ef.png",
       "açıklama": "Şeker içerir, genellikle salkım halinde bulunur.",
-      "fiyat": 9.99,
+      "fiyat": "10",
       "tur": "Meyve"
     },
     {
@@ -40,7 +40,7 @@
       "ad": "Çilek",
       "açıklama": "Lezzetli ve vitamin açısından zengin bir meyve.",
       "resim": "https://png.pngtree.com/png-clipart/20230425/original/pngtree-fruit-strawberry-red-fresh-png-image_9096589.png",
-      "fiyat": 8.49,
+      "fiyat": "25",
       "tur": "Meyve",
       "haftaninYildizi": true
     },
@@ -49,7 +49,7 @@
       "ad": "Ananas",
       "resim": "https://dogaaktar.com/5221-large_default/ananas-sirkesi-250-ml-for-all-food-organic.jpg",
       "açıklama": "Tropikal bir meyve, tatlı ve sulu.",
-      "fiyat": 10.99,
+      "fiyat": "30",
       "tur": "Meyve"
     },
     {
@@ -57,7 +57,7 @@
       "ad": "Kiraz",
       "resim": "https://tr.frigo-pak.com.tr/wp-content/uploads/2022/04/1-frigopak-dondurulmus-kara-kiraz-300x217.png",
       "açıklama": "Yaz aylarının lezzetli meyvesi.",
-      "fiyat": 12.99,
+      "fiyat": "25",
       "tur": "Meyve"
     },
     {
