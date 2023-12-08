@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import AdminNavbar from "../../Components/AdminNavbar";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchData, updateData } from "../../Redux/Action";
+import { deleteData, fetchData, updateData } from "../../Redux/Action";
 
 const AdminFruits = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.data);
-  const filteredData = data.filter((fruit) => fruit.tur === "Meyve");
+  const filteredData = Array.isArray(data) ? data.filter((fruit) => fruit.tur === "Meyve") : [];
   const [editingIndex, setEditingIndex] = useState(null);
   const [editedData, setEditedData] = useState({
     ad: "",
@@ -31,7 +31,8 @@ const AdminFruits = () => {
   const handleUpdateData = async () => {
     try {
       if (editingIndex !== null && editingIndex !== undefined) {
-        dispatch(updateData({ dataId: filteredData[editingIndex].id, newData: editedData }));
+        await dispatch(updateData({ dataId: filteredData[editingIndex].id, newData: editedData }));
+        dispatch(fetchData());
       } else {
         console.error("Hata: Geçerli bir meyve seçilmemiş.");
       }
@@ -41,17 +42,29 @@ const AdminFruits = () => {
       handleCancelEdit();
     }
   };
+  const handleDeleteClick = async (dataId) => {
+    try {
+      if(dataId){
+        await dispatch(deleteData(dataId));
+        dispatch(fetchData());
+      }else {
+        console.error("silinecek verinin kimliği belirtilmemiş");
+      }
+    } catch (error) {
+      console.error("Veri silinirken hata oluştu:", error.payload);
+    }
+  };
 
   useEffect(() => {
-    dispatch(fetchData());
-  }, [dispatch]);
+      dispatch(fetchData());
+  }, [ dispatch]);
 
   return (
     <div className="flex bg-slate-800 min-h-screen">
       <div className="w-56 mr-8">
         <AdminNavbar />
         {editingIndex !== null && (
-          <div className="absolute top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center">
+          <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center">
             <div className="bg-gray-700 w-64 h-72 flex flex-col items-center justify-center rounded shadow-lg shadow-black text-white">
               <h3>Meyve Adı:</h3>
               <input
@@ -127,6 +140,7 @@ const AdminFruits = () => {
                     Düzenle
                   </button>
                   <button
+                    onClick={()=> handleDeleteClick(meyve.id)}
                     className="bg-red-500 w-20 text-white p-2 m-1 rounded"
                   >
                     Sil

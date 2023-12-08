@@ -17,8 +17,16 @@ const updateData = ({ dataId, newData }) => async (dispatch) => {
     return response.data; 
   } catch (error) {
     console.error('Veri güncellenirken hata oluştu:', error);
-    throw error; 
+  }
+};
+ const deleteData = (dataId) => async (dispatch) => {
+  try{
+    const response = await axios.delete(`http://localhost:3005/data/${dataId}`);
+  dispatch(deleteData(response.data))
+  return response.data;
+  }catch(error) {
+    console.error('Veri silinirken hata oluştu:',error.response.data);
   }
 };
 
-export { fetchData, updateData };
+export { fetchData , updateData , deleteData};

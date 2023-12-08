@@ -65,7 +65,7 @@
       "ad": "Mango",
       "resim": "https://clipart-library.com/image_gallery2/Mango-PNG-Picture.png",
       "açıklama": "Tropikal bir meyve, tatlı ve aromatik.",
-      "fiyat": 11.49,
+      "fiyat": "20",
       "tur": "Meyve"
     },
     {
@@ -73,7 +73,7 @@
       "ad": "Karpuz",
       "resim": "https://static.vecteezy.com/system/resources/previews/027/216/419/non_2x/watermelon-watermelon-watermelon-transparent-transparent-background-ai-generated-free-png.png",
       "açıklama": "Serinletici ve su içeriği yüksek bir meyve.",
-      "fiyat": 6.79,
+      "fiyat": "15",
       "tur": "Meyve"
     },
     {
@@ -81,7 +81,7 @@
       "ad": "Şeftali",
       "açıklama": "Yaz aylarının sulu ve tatlı meyvesi.",
       "resim": "https://static.vecteezy.com/system/resources/previews/022/825/549/original/peach-fruit-peach-on-transparent-background-png.png",
-      "fiyat": 9.29,
+      "fiyat": "20",
       "tur": "Meyve",
       "haftaninYildizi": true
     },
@@ -90,7 +90,7 @@
       "ad": "Armut",
       "resim": "https://biosantarim.com/tema/genel/uploads/urunler/armut.png",
       "açıklama": "Genellikle yumuşak ve hafif tatlıdır.",
-      "fiyat": 7.99,
+      "fiyat": "10",
       "tur": "Meyve"
     },
     {
@@ -98,7 +98,7 @@
       "ad": "Vişne",
       "resim": "https://narsu.com.tr/wp-content/uploads/2021/03/u%CC%88ru%CC%88nler_meyve_ic%CC%A7go%CC%88rsel_vis%CC%A7ne.png",
       "açıklama": "Ekşi ve tatlı bir karışım.",
-      "fiyat": 14.99,
+      "fiyat": "15",
       "tur": "Meyve"
     },
     {
@@ -106,7 +106,7 @@
       "ad": "Limon",
       "resim": "https://pnghq.com/wp-content/uploads/transparent-background-lemon-png-transparent-image-download-79420.png",
       "açıklama": "Ekşi ve taze bir tat.",
-      "fiyat": 4.99,
+      "fiyat": "10",
       "tur": "Meyve"
     },
     {
@@ -114,7 +114,7 @@
       "ad": "Dut",
       "resim": "https://www.farmeks.net/farmeks/dosyalar/urun/75_dr2.png?m=1646830869",
       "açıklama": "İnce kabuklu, tatlı ve besleyici bir meyve.",
-      "fiyat": 8.79,
+      "fiyat": "13",
       "tur": "Meyve"
     },
     {
@@ -154,7 +154,7 @@
       "ad": "Papaya",
       "resim": "https://pngimg.com/d/papaya_PNG48.png",
       "açıklama": "A vitamini açısından zengin, tropikal bir meyve.",
-      "fiyat": 12.29,
+      "fiyat": "25",
       "tur": "Meyve"
     },
     {
@@ -194,7 +194,7 @@
       "ad": "Ceviz",
       "resim": "https://www.malatyamahsulleri.com/public/uploads/products/meta/lrlWHc1Hhak36Gba5SmOL3no5bYF0iUmmM84M4uz.png",
       "açıklama": "Sağlıklı yağlar içerir, sert dış kabuklu.",
-      "fiyat": 16.49,
+      "fiyat": "20",
       "tur": "Meyve"
     },
     {
@@ -202,7 +202,7 @@
       "ad": "Kuşburnu",
       "resim": "https://pngimg.com/d/rose_hip_PNG30.png",
       "açıklama": "C vitamini kaynağı, ekşi ve tatlı.",
-      "fiyat": 9.79,
+      "fiyat": "12",
       "tur": "Meyve"
     },
     {
@@ -218,15 +218,7 @@
       "ad": "İncir",
       "resim": "https://www.ucakkardesler.com.tr/images/product/sliders/d858066b-af0d-4ab6-bfa1-02db2c5bffcd.png",
       "açıklama": "Lif açısından zengin, yumuşak ve tatlı.",
-      "fiyat": 7.29,
-      "tur": "Meyve"
-    },
-    {
-      "id": 28,
-      "ad": "Kaktüs",
-      "resim": "https://pnglib.nyc3.cdn.digitaloceanspaces.com/uploads/2020/08/prickly-pear-cactus-fruit_5f34e834f3273.png",
-      "açıklama": "Susuzluğu giderici, sert dikenli bir meyve.",
-      "fiyat": 4.39,
+      "fiyat": "25",
       "tur": "Meyve"
     },
     {
@@ -234,7 +226,7 @@
       "ad": "Domates",
       "resim": "https://clipart-library.com/img/2062367.png",
       "açıklama": "Meyve olarak sınıflandırılsa da genellikle sebze olarak tüketilir.",
-      "fiyat": 5.99,
+      "fiyat": "12",
       "tur": "Sebze"
     },
     {
@@ -306,7 +298,7 @@
       "ad": "Soğan",
       "resim": "https://www.igunmar.com.tr/images/urunler/edis.png",
       "açıklama": "Çeşitli yemeklerde tatlandırıcı olarak kullanılan bir aromatik.",
-      "fiyat": 5.99,
+      "fiyat": "10",
       "tur": "Sebze"
     },
     {
@@ -394,7 +386,7 @@
       "ad": "Turp",
       "resim": "https://www.eskitadinda.com/img/kirmizi-turp_279_4182_2.png",
       "açıklama": "Lezzetli ve baharatlı bir sebze.",
-      "fiyat": 5.99,
+      "fiyat": "8",
       "tur": "Sebze"
     },
     {
