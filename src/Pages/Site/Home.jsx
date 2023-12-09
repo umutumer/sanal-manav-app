@@ -8,11 +8,19 @@ import { BiHappy } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../Redux/Action";
 import Footer from "../../Components/Footer";
+import { addToCart } from "../../Redux/CartSlice";
 
 const Home = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.data);
   const filteredData = data.filter((star) => star.haftaninYildizi);
+
+  const handleAddToCart = (productId) => {
+    const product = data.find((item) => item.id === productId);
+    if (product) {
+      dispatch(addToCart(product));
+    }
+  };
 
   useEffect(() => {
     dispatch(fetchData());
@@ -74,7 +82,7 @@ const Home = () => {
                 <span className="text-green-600">Fiyat: </span>
                 {yildiz.fiyat}₺
               </p>
-              <button className="bg-green-600 text-white p-2 rounded-xl w-[90%]">
+              <button onClick={()=>handleAddToCart(yildiz.id)} className="bg-green-600 text-white p-2 rounded-xl w-[90%]">
                 Sepete Ekle
               </button>
             </div>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { BsFillTrashFill } from 'react-icons/bs'
 import { removeFromCart } from "../../Redux/CartSlice";
 import Navbar from "../../Components/Navbar";
+import { toast } from "react-toastify";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -13,6 +14,16 @@ const Cart = () => {
 
   const handleRemoveFromCart = (index) => {
     dispatch(removeFromCart(index));
+    toast.warn('Ürün Sepetten Çıkarıldı !', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
   };
   if (cartItemCount === 0) {
     return(
@@ -54,7 +65,7 @@ const Cart = () => {
               <h3 className="text-2xl mb-3 mt-1">Sipariş Özeti</h3>
               <p className="text-2xl mb-3"><span className="font-medium text-green-500">Toplam Ürün:</span> {cartItemCount}</p>
               <p className="text-xl mb-3"><span className="font-medium text-green-500">Toplam Fiyat:</span> {cartItemPrice}₺</p>
-              <Link to='payment' className="w-[90%] bg-green-500 text-white text-xl text-center absolute bottom-4 rounded-xl p-1">Sepeti Onayla</Link>
+              <Link to='/payment' className="w-[90%] bg-green-500 text-white text-xl text-center absolute bottom-4 rounded-xl p-1">Sepeti Onayla</Link>
             </div>
            
           </div>

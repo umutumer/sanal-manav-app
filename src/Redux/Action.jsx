@@ -1,3 +1,4 @@
+import { setSiparisField, setUrunler } from './OrderSlice';
 import { setData, upData } from './Slice';
 import axios from 'axios';
 
@@ -28,5 +29,37 @@ const updateData = ({ dataId, newData }) => async (dispatch) => {
     console.error('Veri silinirken hata oluştu:',error.response.data);
   }
 };
-
-export { fetchData , updateData , deleteData};
+const fetchOrder = () => async (dispatch) =>{
+  try{
+    const response = await axios.get('http://localhost:3005/siparisler');
+    dispatch(setData(response.data))
+  } catch (error){
+    console.error('Veriler getirilirken hata oluştu:', error);
+  }
+};
+const sendOrder = (isimSoyisim,adres,siparisNotu,urunler) => async (dispatch) =>{
+  try{
+    const response = await axios.post('http://localhost:3005/siparisler',{
+    isimSoyisim,
+    adres,
+    siparisNotu,
+    urunler
+  });
+  console.log(response);
+  dispatch(setUrunler(urunler));
+  dispatch(setSiparisField({ field: 'isimSoyisim', value: isimSoyisim }));
+  dispatch(setSiparisField({ field: 'adres', value: adres }));
+  dispatch(setSiparisField({ field: 'siparisNotu', value: siparisNotu }));
+  } catch (error){
+    console.error('Veriler getirilirken hata oluştu:', error);
+  }
+};
+const deleteOrder = (orderId) => async (dispatch) =>{
+  try{
+    const response = await axios.delete(`http://localhost:3005/siparisler/${orderId}`);
+    dispatch(deleteData(response.data))
+  } catch(error){
+    console.error('Veri silinirken hata oluştu:',error.response.data);
+  }
+};
+export { fetchData , updateData , deleteData , fetchOrder , sendOrder , deleteOrder };

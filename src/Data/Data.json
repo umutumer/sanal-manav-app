@@ -5,7 +5,7 @@
       "ad": "Elma",
       "açıklama": "Tatlı ve sulu bir meyve.",
       "resim": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25d45014-8cc3-4c98-b02c-5a0cf3a55ddd/dcrjbvx-b5078bbf-03ff-4625-b214-35c3f9fefc4c.png/v1/fill/w_894,h_894/red_apple_on_a_transparent_background__by_prussiaart_dcrjbvx-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvMjVkNDUwMTQtOGNjMy00Yzk4LWIwMmMtNWEwY2YzYTU1ZGRkXC9kY3JqYnZ4LWI1MDc4YmJmLTAzZmYtNDYyNS1iMjE0LTM1YzNmOWZlZmM0Yy5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Y0-7z3OBNt3CbKeZrPiWJFD-4LhVF7I9iC2wADeZEAU",
-      "fiyat": "7",
+      "fiyat": 12,
       "tur": "Meyve",
       "haftaninYildizi": true
     },
@@ -14,7 +14,7 @@
       "ad": "Muz",
       "açıklama": "Potasyum açısından zengin, enerji verici bir meyve.",
       "resim": "https://png.pngtree.com/png-clipart/20220716/ourmid/pngtree-banana-yellow-fruit-banana-skewers-png-image_5944324.png",
-      "fiyat": "20",
+      "fiyat": 25,
       "tur": "Meyve",
       "haftaninYildizi": true
     },
@@ -23,7 +23,7 @@
       "ad": "Portakal",
       "açıklama": "C vitamini deposu, taze ve ekşi bir meyve.",
       "resim": "https://watermark.lovepik.com/photo/20211118/large/lovepik-fresh-juicy-orange-png-picture_480004785.jpg",
-      "fiyat": "15",
+      "fiyat": 12,
       "tur": "Meyve",
       "haftaninYildizi": true
     },
@@ -32,7 +32,7 @@
       "ad": "Üzümm",
       "resim": "https://i.pinimg.com/originals/8d/7d/83/8d7d83ab540c940c096ad04c32f417ef.png",
       "açıklama": "Şeker içerir, genellikle salkım halinde bulunur.",
-      "fiyat": "10",
+      "fiyat": 30,
       "tur": "Meyve"
     },
     {
@@ -40,7 +40,7 @@
       "ad": "Çilek",
       "açıklama": "Lezzetli ve vitamin açısından zengin bir meyve.",
       "resim": "https://png.pngtree.com/png-clipart/20230425/original/pngtree-fruit-strawberry-red-fresh-png-image_9096589.png",
-      "fiyat": "25",
+      "fiyat": 22,
       "tur": "Meyve",
       "haftaninYildizi": true
     },
@@ -49,7 +49,7 @@
       "ad": "Ananas",
       "resim": "https://dogaaktar.com/5221-large_default/ananas-sirkesi-250-ml-for-all-food-organic.jpg",
       "açıklama": "Tropikal bir meyve, tatlı ve sulu.",
-      "fiyat": "30",
+      "fiyat": 30,
       "tur": "Meyve"
     },
     {
@@ -57,7 +57,7 @@
       "ad": "Kiraz",
       "resim": "https://tr.frigo-pak.com.tr/wp-content/uploads/2022/04/1-frigopak-dondurulmus-kara-kiraz-300x217.png",
       "açıklama": "Yaz aylarının lezzetli meyvesi.",
-      "fiyat": "25",
+      "fiyat": 25,
       "tur": "Meyve"
     },
     {
@@ -65,7 +65,7 @@
       "ad": "Mango",
       "resim": "https://clipart-library.com/image_gallery2/Mango-PNG-Picture.png",
       "açıklama": "Tropikal bir meyve, tatlı ve aromatik.",
-      "fiyat": "20",
+      "fiyat": 20,
       "tur": "Meyve"
     },
     {
@@ -73,7 +73,7 @@
       "ad": "Karpuz",
       "resim": "https://static.vecteezy.com/system/resources/previews/027/216/419/non_2x/watermelon-watermelon-watermelon-transparent-transparent-background-ai-generated-free-png.png",
       "açıklama": "Serinletici ve su içeriği yüksek bir meyve.",
-      "fiyat": "15",
+      "fiyat": 15,
       "tur": "Meyve"
     },
     {
@@ -81,7 +81,7 @@
       "ad": "Şeftali",
       "açıklama": "Yaz aylarının sulu ve tatlı meyvesi.",
       "resim": "https://static.vecteezy.com/system/resources/previews/022/825/549/original/peach-fruit-peach-on-transparent-background-png.png",
-      "fiyat": "20",
+      "fiyat": 20,
       "tur": "Meyve",
       "haftaninYildizi": true
     },
@@ -90,7 +90,7 @@
       "ad": "Armut",
       "resim": "https://biosantarim.com/tema/genel/uploads/urunler/armut.png",
       "açıklama": "Genellikle yumuşak ve hafif tatlıdır.",
-      "fiyat": "10",
+      "fiyat": 10,
       "tur": "Meyve"
     },
     {
@@ -98,7 +98,7 @@
       "ad": "Vişne",
       "resim": "https://narsu.com.tr/wp-content/uploads/2021/03/u%CC%88ru%CC%88nler_meyve_ic%CC%A7go%CC%88rsel_vis%CC%A7ne.png",
       "açıklama": "Ekşi ve tatlı bir karışım.",
-      "fiyat": "15",
+      "fiyat": 15,
       "tur": "Meyve"
     },
     {
@@ -106,7 +106,7 @@
       "ad": "Limon",
       "resim": "https://pnghq.com/wp-content/uploads/transparent-background-lemon-png-transparent-image-download-79420.png",
       "açıklama": "Ekşi ve taze bir tat.",
-      "fiyat": "10",
+      "fiyat": 10,
       "tur": "Meyve"
     },
     {
@@ -114,7 +114,7 @@
       "ad": "Dut",
       "resim": "https://www.farmeks.net/farmeks/dosyalar/urun/75_dr2.png?m=1646830869",
       "açıklama": "İnce kabuklu, tatlı ve besleyici bir meyve.",
-      "fiyat": "13",
+      "fiyat": 15,
       "tur": "Meyve"
     },
     {
@@ -194,7 +194,7 @@
       "ad": "Ceviz",
       "resim": "https://www.malatyamahsulleri.com/public/uploads/products/meta/lrlWHc1Hhak36Gba5SmOL3no5bYF0iUmmM84M4uz.png",
       "açıklama": "Sağlıklı yağlar içerir, sert dış kabuklu.",
-      "fiyat": "20",
+      "fiyat": 20,
       "tur": "Meyve"
     },
     {
@@ -202,7 +202,7 @@
       "ad": "Kuşburnu",
       "resim": "https://pngimg.com/d/rose_hip_PNG30.png",
       "açıklama": "C vitamini kaynağı, ekşi ve tatlı.",
-      "fiyat": "12",
+      "fiyat": 12,
       "tur": "Meyve"
     },
     {
@@ -218,7 +218,7 @@
       "ad": "İncir",
       "resim": "https://www.ucakkardesler.com.tr/images/product/sliders/d858066b-af0d-4ab6-bfa1-02db2c5bffcd.png",
       "açıklama": "Lif açısından zengin, yumuşak ve tatlı.",
-      "fiyat": "25",
+      "fiyat": 25,
       "tur": "Meyve"
     },
     {
@@ -226,7 +226,7 @@
       "ad": "Domates",
       "resim": "https://clipart-library.com/img/2062367.png",
       "açıklama": "Meyve olarak sınıflandırılsa da genellikle sebze olarak tüketilir.",
-      "fiyat": "12",
+      "fiyat": 12,
       "tur": "Sebze"
     },
     {
@@ -234,7 +234,7 @@
       "ad": "Salatalık",
       "resim": "https://pngimg.com/d/cucumber_PNG12602.png",
       "açıklama": "Yüksek su içeriği olan ferahlatıcı bir sebze.",
-      "fiyat": 5.99,
+      "fiyat": 15,
       "tur": "Sebze"
     },
     {
@@ -298,7 +298,7 @@
       "ad": "Soğan",
       "resim": "https://www.igunmar.com.tr/images/urunler/edis.png",
       "açıklama": "Çeşitli yemeklerde tatlandırıcı olarak kullanılan bir aromatik.",
-      "fiyat": "10",
+      "fiyat": 10,
       "tur": "Sebze"
     },
     {
@@ -386,7 +386,7 @@
       "ad": "Turp",
       "resim": "https://www.eskitadinda.com/img/kirmizi-turp_279_4182_2.png",
       "açıklama": "Lezzetli ve baharatlı bir sebze.",
-      "fiyat": "8",
+      "fiyat": 8,
       "tur": "Sebze"
     },
     {
@@ -396,6 +396,46 @@
       "açıklama": "Çeşitli türleri bulunan ve salatalarda sıkça kullanılan bir yeşillik.",
       "fiyat": 5.99,
       "tur": "Sebze"
+    }
+  ],
+  "siparisler": [
+    {
+      "isimSoyisim": "Umut Tümer",
+      "adres": "deneme",
+      "siparisNotu": "deneme",
+      "urunler": [
+        {
+          "id": 13,
+          "ad": "Limon",
+          "resim": "https://pnghq.com/wp-content/uploads/transparent-background-lemon-png-transparent-image-download-79420.png",
+          "açıklama": "Ekşi ve taze bir tat.",
+          "fiyat": 10,
+          "tur": "Meyve"
+        },
+        {
+          "id": 12,
+          "ad": "Vişne",
+          "resim": "https://narsu.com.tr/wp-content/uploads/2021/03/u%CC%88ru%CC%88nler_meyve_ic%CC%A7go%CC%88rsel_vis%CC%A7ne.png",
+          "açıklama": "Ekşi ve tatlı bir karışım.",
+          "fiyat": 15,
+          "tur": "Meyve"
+        },
+        {
+          "id": 11,
+          "ad": "Armut",
+          "resim": "https://biosantarim.com/tema/genel/uploads/urunler/armut.png",
+          "açıklama": "Genellikle yumuşak ve hafif tatlıdır.",
+          "fiyat": 10,
+          "tur": "Meyve"
+        }
+      ],
+      "id": 51
+    },
+    {
+      "id": 52
+    },
+    {
+      "id": 53
     }
   ]
 }

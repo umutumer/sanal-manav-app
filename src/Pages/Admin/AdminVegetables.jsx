@@ -86,10 +86,10 @@ const AdminVegetables = () => {
               />
               <h3>Sebze Fiyatı:</h3>
               <input
-                type="text"
+                type="number"
                 value={editedData.fiyat}
                 onChange={(e) =>
-                  setEditedData({ ...editedData, fiyat: e.target.value })
+                  setEditedData({ ...editedData, fiyat: parseFloat(e.target.value) })
                 }
                 className="bg-gray-600 p-2 rounded-md w-[90%]"
               />

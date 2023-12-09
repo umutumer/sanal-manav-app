@@ -22,7 +22,7 @@ const AdminHome = () => {
             </Link>
           </div>
           <div className="w-[40%] h-[90%] bg-slate-900 rounded-2xl m-5 relative">
-          <Link to='/admin/fruits'>
+          <Link to='/admin/vegetables'>
             <img src={SebzelerResim} alt="meyveler" className="w-full h-full text-center rounded-2xl object-cover opacity-40" />
             <p className="absolute top-0 w-full h-full flex items-center text-3xl font-bold text-white justify-center">Sebzeler</p>
             </Link>
@@ -30,7 +30,7 @@ const AdminHome = () => {
         </div>
         <div className="w-full h-[50%] flex items-center justify-center">
           <div className="w-[85%] h-[90%] bg-slate-900 rounded-2xl m-5 relative">
-          <Link to='/admin/fruits'>
+          <Link to='/admin/orders'>
             <img src={SiparislerResim} alt="meyveler" className="w-full h-full text-center rounded-2xl object-cover opacity-40" />
             <p className="absolute top-0 w-full h-full flex items-center text-3xl font-bold text-white justify-center">Siparişler</p>
             </Link>
