@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import AdminNavbar from "../../Components/AdminNavbar";
 import { useDispatch, useSelector } from "react-redux";
 import {  deleteData, fetchData, updateData } from "../../Redux/Action";
+import { toast } from "react-toastify";
 
 const AdminVegetables = () => {
   const dispatch = useDispatch();
@@ -34,6 +35,16 @@ const AdminVegetables = () => {
       if (editingIndex !== null && editingIndex !== undefined) {
         await dispatch(updateData({ dataId: filteredData[editingIndex].id, newData: editedData }));
         dispatch(fetchData());
+        toast.success('Ürün Başarıyla Güncellendi!', {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
       } else {
         console.error("Hata: Geçerli bir meyve seçilmemiş.");
       }
@@ -48,6 +59,16 @@ const AdminVegetables = () => {
       if(dataId){
         await dispatch(deleteData(dataId));
         dispatch(fetchData());
+        toast.warn('Ürün Silindi!', {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
       }else {
         console.error("silinecek verinin kimliği belirtilmemiş");
       }

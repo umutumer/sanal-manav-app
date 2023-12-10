@@ -14,9 +14,9 @@ const Cart = () => {
 
   const handleRemoveFromCart = (index) => {
     dispatch(removeFromCart(index));
-    toast.warn('Ürün Sepetten Çıkarıldı !', {
-      position: "top-center",
-      autoClose: 5000,
+    toast.success('Ürün Sepetten Çıkarıldı !', {
+      position: "bottom-right",
+      autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -41,22 +41,22 @@ const Cart = () => {
             <Navbar />
           <h2 className="text-center text-4xl mt-32 text-green-500">Sepetiniz</h2>
           <div className="w-full mt-10 flex flex-wrap items-center sm:justify-around justify-center relative">
-            <div className="w-full flex flex-wrap items-center justify-center">
+            <div className="w-[700px] flex flex-wrap items-center justify-center">
               {cartItems.map((item, index) => (
                 <div
-                  className="flex flex-wrap items-center bg-gray-100 rounded-xl mb-10 sm:w-[600px] w-[400px] h-28 relative m-5"
+                  className="flex items-center bg-gray-100 rounded-xl mb-10 w-[340px] h-28 relative m-1"
                   key={index}
                 >
                   <div className="m-2">
-                    <img className="w-28" src={item.resim} alt="" />
+                    <img className="w-24" src={item.resim} alt="" />
                   </div>
-                  <div className="p-5">
-                    <p className="mr-2"><span className="font-medium text-green-600">Ürün İsmi:</span> {item.ad}</p>
-                    <p className="mr-2"><span className="font-medium text-green-600">Ürün Kategorisi:</span> {item.tur}</p>
-                    <p className="mr-2"><span className="font-medium text-green-600">Fiyat:</span> {item.fiyat}₺</p>
+                  <div className="m-2">
+                    <p className="mr-1"><span className="font-medium text-green-600">Ürün İsmi:</span> {item.ad}</p>
+                    <p className="mr-1"><span className="font-medium text-green-600">Ürün Kategorisi:</span> {item.tur}</p>
+                    <p className="mr-1"><span className="font-medium text-green-600">Fiyat:</span> {item.fiyat}₺</p>
                   </div>
                   <div>
-                  <button   onClick={() => handleRemoveFromCart(index)}  className="absolute right-0 top-0 text-2xl text-center text-white bg-green-600 w-[50px] rounded-se-xl p-[10px]"><BsFillTrashFill /></button>
+                  <button   onClick={() => handleRemoveFromCart(index)}  className="absolute right-0 top-0 text-xl text-center text-white bg-green-600 w-[30px] rounded-se-xl p-[5px]"><BsFillTrashFill /></button>
                   </div>
                 </div>
               ))}

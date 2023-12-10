@@ -12,8 +12,7 @@ const siparisSlice = createSlice({
   initialState: [],
   reducers: {
     setSiparisField: (state, action) => {
-      const { field, value } = action.payload;
-      state[field] = value;
+        return { ...state, [action.field]: action.value };
     },
     setUrunler: (state, action) => {
       state.urunler = action.payload;

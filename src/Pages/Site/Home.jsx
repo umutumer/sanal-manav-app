@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../Redux/Action";
 import Footer from "../../Components/Footer";
 import { addToCart } from "../../Redux/CartSlice";
+import { toast } from "react-toastify";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,16 @@ const Home = () => {
     const product = data.find((item) => item.id === productId);
     if (product) {
       dispatch(addToCart(product));
+      toast.success('🛒 Sepete Eklendi!', {
+        position: "bottom-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     }
   };
 

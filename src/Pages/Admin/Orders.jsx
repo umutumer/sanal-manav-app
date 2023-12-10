@@ -2,16 +2,28 @@ import React, { useEffect } from "react";
 import AdminNavbar from "../../Components/AdminNavbar";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteOrder, fetchOrder } from "../../Redux/Action";
+import { toast } from "react-toastify";
 
 const Orders = () => {
   const dispatch = useDispatch();
-  const orders = useSelector((state) => state.order);
+  const orders = useSelector((state) => state.data || []);
+  console.log(orders);
 
   const handleDeleteClick = async (orderId) => {
     try {
       if (orderId) {
         await dispatch(deleteOrder(orderId));
         dispatch(fetchOrder());
+        toast.success('Sipariş Teslim Edildi!', {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
       } else {
         console.error("silinecek verinin kimliği belirtilmemiş");
       }
@@ -41,31 +53,32 @@ const Orders = () => {
             </tr>
           </thead>
           <tbody>
-            {orders.map((order, index) => (
-              <tr
-                className="bg-slate-800 even:bg-slate-900 p-2 text-center"
-                key={index}
-              >
-                <td>{order.isimSoyisim}</td>
-                <td>{order.adres}</td>
-                <td>{order.siparisNotu}</td>
-                <td>
-                  {order.urunler.map((urun, urunIndex) => (
+          {orders.map((order, index) => (
+            <tr
+              className="bg-slate-800 even:bg-slate-900 p-2 text-center"
+              key={index}
+            >
+              <td>{order.isimSoyisim}</td>
+              <td>{order.adres}</td>
+              <td>{order.siparisNotu || "-"}</td>
+              <td>
+                {Array.isArray(order.urunler) &&
+                  order.urunler.map((urun, urunIndex) => (
                     <div key={urunIndex}>
-                      {urun.ad}
+                      {urun && urun.ad ? urun.ad : "Bilgi yok"}
                     </div>
                   ))}
-                </td>
-                <td>
-                  <button
-                    onClick={() => handleDeleteClick(order.id)}
-                    className="bg-red-500 w-20 text-white p-2 m-1 rounded"
-                  >
-                    Teslim Edildi
-                  </button>
-                </td>
-              </tr>
-            ))}
+              </td>
+              <td>
+                <button
+                  onClick={() => handleDeleteClick(order.id)}
+                  className="bg-red-500 w-20 text-white p-2 m-1 rounded"
+                >
+                  Teslim Edildi
+                </button>
+              </td>
+            </tr>
+          ))}
           </tbody>
         </table>
       </div>

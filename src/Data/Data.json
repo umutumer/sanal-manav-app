@@ -130,7 +130,7 @@
       "ad": "Nar",
       "resim": "https://narsu.com.tr/wp-content/uploads/2021/03/u%CC%88ru%CC%88nler_meyve_ic%CC%A7go%CC%88rsel_nar.png",
       "açıklama": "Antioksidanlar açısından zengin, ekşi ve tatlı.",
-      "fiyat": 15.99,
+      "fiyat": 16,
       "tur": "Meyve"
     },
     {
@@ -432,10 +432,53 @@
       "id": 51
     },
     {
+      "isimSoyisim": "Umut Tümer",
+      "adres": "deneme 2",
+      "siparisNotu": "deneme 2",
+      "urunler": [
+        {
+          "id": 10,
+          "ad": "Şeftali",
+          "açıklama": "Yaz aylarının sulu ve tatlı meyvesi.",
+          "resim": "https://static.vecteezy.com/system/resources/previews/022/825/549/original/peach-fruit-peach-on-transparent-background-png.png",
+          "fiyat": 20,
+          "tur": "Meyve",
+          "haftaninYildizi": true
+        },
+        {
+          "id": 12,
+          "ad": "Vişne",
+          "resim": "https://narsu.com.tr/wp-content/uploads/2021/03/u%CC%88ru%CC%88nler_meyve_ic%CC%A7go%CC%88rsel_vis%CC%A7ne.png",
+          "açıklama": "Ekşi ve tatlı bir karışım.",
+          "fiyat": 15,
+          "tur": "Meyve"
+        },
+        {
+          "id": 18,
+          "ad": "Ahududu",
+          "resim": "https://eliteservicesbe.com/139-large_default/ahududu-15x150gr-be.jpg",
+          "açıklama": "Antioksidanlar içerir, tatlı ve ekşi.",
+          "fiyat": 9.89,
+          "tur": "Meyve"
+        },
+        {
+          "id": 7,
+          "ad": "Kiraz",
+          "resim": "https://tr.frigo-pak.com.tr/wp-content/uploads/2022/04/1-frigopak-dondurulmus-kara-kiraz-300x217.png",
+          "açıklama": "Yaz aylarının lezzetli meyvesi.",
+          "fiyat": 25,
+          "tur": "Meyve"
+        },
+        {
+          "id": 14,
+          "ad": "Dut",
+          "resim": "https://www.farmeks.net/farmeks/dosyalar/urun/75_dr2.png?m=1646830869",
+          "açıklama": "İnce kabuklu, tatlı ve besleyici bir meyve.",
+          "fiyat": 15,
+          "tur": "Meyve"
+        }
+      ],
       "id": 52
-    },
-    {
-      "id": 53
     }
   ]
 }

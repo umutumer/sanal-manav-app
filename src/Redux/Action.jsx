@@ -37,20 +37,20 @@ const fetchOrder = () => async (dispatch) =>{
     console.error('Veriler getirilirken hata oluştu:', error);
   }
 };
-const sendOrder = (isimSoyisim,adres,siparisNotu,urunler) => async (dispatch) =>{
-  try{
-    const response = await axios.post('http://localhost:3005/siparisler',{
-    isimSoyisim,
-    adres,
-    siparisNotu,
-    urunler
-  });
-  console.log(response);
-  dispatch(setUrunler(urunler));
-  dispatch(setSiparisField({ field: 'isimSoyisim', value: isimSoyisim }));
-  dispatch(setSiparisField({ field: 'adres', value: adres }));
-  dispatch(setSiparisField({ field: 'siparisNotu', value: siparisNotu }));
-  } catch (error){
+const sendOrder = (isimSoyisim, adres, siparisNotu, urunler) => async (dispatch) => {
+  try {
+    const response = await axios.post('http://localhost:3005/siparisler', {
+      isimSoyisim,
+      adres,
+      siparisNotu,
+      urunler
+    });
+    console.log(response);
+    dispatch(setUrunler(urunler));
+    dispatch(setSiparisField({ field: 'isimSoyisim', value: isimSoyisim }));
+    dispatch(setSiparisField({ field: 'adres', value: adres }));
+    dispatch(setSiparisField({ field: 'siparisNotu', value: siparisNotu }));
+  } catch (error) {
     console.error('Veriler getirilirken hata oluştu:', error);
   }
 };
