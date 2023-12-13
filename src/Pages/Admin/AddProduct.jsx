@@ -1,13 +1,11 @@
 import React, { useRef } from "react";
 import AdminNavbar from "../../Components/AdminNavbar";
-import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { createData } from "../../Redux/Action";
 import { setDataField } from "../../Redux/Slice";
 import { toast } from "react-toastify";
 
 const AddProduct = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const turRef = useRef();
