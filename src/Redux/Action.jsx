@@ -1,5 +1,5 @@
 import { setSiparisField, setUrunler } from './OrderSlice';
-import { setData, upData } from './Slice';
+import { setData, setDataField, upData } from './Slice';
 import axios from 'axios';
 
 const fetchData = () => async (dispatch) => {
@@ -27,6 +27,23 @@ const updateData = ({ dataId, newData }) => async (dispatch) => {
   return response.data;
   }catch(error) {
     console.error('Veri silinirken hata oluştu:',error.response.data);
+  }
+};
+const createData = (tur, ad, resim, fiyat) => async (dispatch) => {
+  try {
+    const response = await axios.post('http://localhost:3005/data', {
+      tur,
+      ad,
+      resim,
+      fiyat
+    });
+    console.log(response);
+    dispatch(setDataField({ field: 'tur', value: tur }));
+    dispatch(setDataField({ field: 'ad', value: ad }));
+    dispatch(setDataField({ field: 'resim', value: resim }));
+    dispatch(setDataField({ field: 'fiyat', value: fiyat }));
+  } catch (error) {
+    console.error('Veriler getirilirken hata oluştu:', error);
   }
 };
 const fetchOrder = () => async (dispatch) =>{
@@ -62,4 +79,4 @@ const deleteOrder = (orderId) => async (dispatch) =>{
     console.error('Veri silinirken hata oluştu:',error.response.data);
   }
 };
-export { fetchData , updateData , deleteData , fetchOrder , sendOrder , deleteOrder };
+export { fetchData , updateData , deleteData , createData , fetchOrder , sendOrder , deleteOrder };

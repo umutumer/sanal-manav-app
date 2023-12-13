@@ -11,6 +11,7 @@ import Payment from './Pages/Site/Payment';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Orders from './Pages/Admin/Orders';
+import AddProduct from './Pages/Admin/AddProduct';
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <Route path='/admin/fruits' element={<AdminFruits />} />
       <Route path='/admin/vegetables' element={<AdminVegetables />} />
       <Route path='/admin/orders' element={<Orders />} />
+      <Route path='/admin/addproduct' element={<AddProduct />} />
     </Routes>
     </BrowserRouter>
   );

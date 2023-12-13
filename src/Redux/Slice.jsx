@@ -15,10 +15,13 @@ const dataSlice = createSlice({
     },
     delData:(state,action) =>{
       return state.filter((item) => item.id !== action.payload)
-    }
+    },
+    setDataField: (state, action) => {
+      return { ...state, [action.field]: action.value };
+  },
   },
 });
 
-export const { setData ,upData , delData } = dataSlice.actions;
+export const { setData ,upData , delData , setDataField } = dataSlice.actions;
 
 export default dataSlice.reducer;

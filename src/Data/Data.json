@@ -122,7 +122,7 @@
       "ad": "Avokado",
       "resim": "https://png.pngtree.com/png-clipart/20230114/ourmid/pngtree-photo-of-avocado-png-image_6561465.png",
       "açıklama": "Sağlıklı yağlar içeren kremamsı bir meyve.",
-      "fiyat": 13.49,
+      "fiyat": 20,
       "tur": "Meyve"
     },
     {
@@ -429,7 +429,7 @@
           "tur": "Meyve"
         }
       ],
-      "id": 51
+      "id": 100
     },
     {
       "isimSoyisim": "Umut Tümer",
@@ -478,7 +478,7 @@
           "tur": "Meyve"
         }
       ],
-      "id": 52
+      "id": 101
     }
   ]
 }
