@@ -46,7 +46,7 @@ const Home = () => {
           className="w-full h-full object-cover opacity-70"
         />
         <div className="absolute w-full h-full flex flex-col items-center justify-center top-0 text-white">
-          <p className="text-5xl font-bold mb-5">TEK TIKLA HEMEN KAPINDA !</p>
+          <p className="text-5xl font-bold mb-5 sm:ml-0 ml-1 ">TEK TIKLA HEMEN KAPINDA !</p>
           <Link
             to="/products"
             className="w-40 p-2 bg-green-600 text-center rounded-xl"
@@ -72,19 +72,19 @@ const Home = () => {
         </div>
       </div>
       <div className="w-full flex flex-col items-center mt-20">
-        <h3 className="text-4xl font-bold mb-10 text-green-600">
+        <h3 className="sm:text-4xl text-3xl font-bold mb-10 text-green-600">
           Haftanın Yıldızları ⭐
         </h3>
         <div className=" flex flex-wrap justify-center w-full mb-20 ">
           {filteredData.map((yildiz, index) => (
             <div
-              className="w-56 h-[330px] border rounded-xl border-green-600 m-2 text-center"
+              className="sm:w-56 w-44 sm:h-[330px] h-[280px] border rounded-xl border-green-600 m-2 text-center"
               key={index}
             >
               <img
                 src={yildiz.resim}
                 alt="resim"
-                className="w-56 h-52 object-cover p-2"
+                className="sm:w-56 w-44 sm:h-52 h-40 object-cover p-2"
               />
               <h4 className="text-xl font-semibold text-green-600 mb-2">
                 {yildiz.ad}
@@ -93,7 +93,7 @@ const Home = () => {
                 <span className="text-green-600">Fiyat: </span>
                 {yildiz.fiyat}₺
               </p>
-              <button onClick={()=>handleAddToCart(yildiz.id)} className="bg-green-600 text-white p-2 rounded-xl w-[90%]">
+              <button onClick={()=>handleAddToCart(yildiz.id)} className="bg-green-600 text-white sm:p-2 p-1 rounded-xl w-[90%]">
                 Sepete Ekle
               </button>
             </div>

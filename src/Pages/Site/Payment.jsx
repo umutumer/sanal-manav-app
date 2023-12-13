@@ -45,7 +45,7 @@ const Payment = () => {
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center">
       <h3 className="mb-10 text-4xl font-medium text-green-500">ÖDEME</h3>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex flex-wrap justify-center">
         <div className="w-[900px] flex flex-col m-5">
           <form className="flex w-full justify-around flex-wrap">
             <div className="flex w-full mb-10 justify-around flex-wrap">
@@ -190,16 +190,16 @@ const Payment = () => {
           </form>
         </div>
         <div>
-        <div className="flex flex-wrap justify-center w-[700px]  max-h-screen m-5">
+        <div className="flex flex-wrap justify-center sm:w-[700px] w-[400px]  max-h-screen m-5">
           {cartItems.map((item, index) => (
             <div
-              className="flex  items-center bg-gray-100 rounded-xl mb-10 w-[300px] h-28 relative m-1"
+              className="flex  items-center bg-gray-100 rounded-xl mb-10 sm:w-[300px] w-[200px] h-28 relative m-1"
               key={index}
             >
-              <div className="m-2">
-                <img className="w-24" src={item.resim} alt="" />
+              <div className="sm:m-2 m-1">
+                <img className="sm:w-24 w-12" src={item.resim} alt="" />
               </div>
-              <div className="p-5">
+              <div className="sm:p-5 p-2">
                 <p className="mr-1">
                   <span className="font-medium text-green-600">Ürün İsmi:</span>{" "}
                   {item.ad}
@@ -213,7 +213,7 @@ const Payment = () => {
             </div>
           ))}
         </div>
-        <div className="w-[700px] flex justify-center m-5">
+        <div className="sm:w-[700px] w-[400px] flex justify-center m-5">
         <div className="flex w-[300px] m-5 justify-around flex-wrap">
           <div className="w-[300px] h-[250px] bg-gray-100 flex flex-col items-center rounded-xl relative">
             <h3 className="text-2xl mb-3 mt-1">Sipariş Özeti</h3>
